@@ -1,5 +1,5 @@
 name: hello
-On:
+on:
   workflow_dispatch:
 
 jobs:
