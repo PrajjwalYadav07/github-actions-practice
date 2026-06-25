@@ -19,7 +19,8 @@ jobs:
 
   test:
     needs: [build]
-    runs:
+    runs-on: ubuntu-latest
+    steps:
       - name: Test code
         run: echo "tested"
 
