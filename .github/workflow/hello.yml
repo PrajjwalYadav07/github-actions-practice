@@ -4,7 +4,7 @@ on:
 
 jobs:
   say-hello:
-    run-on: ubuntu.latest
+    runs-on: ubuntu-latest
     steps:
-      -name: say hello
-      run: echo "hello"
+      - name: say hello
+        run: echo "hello"
