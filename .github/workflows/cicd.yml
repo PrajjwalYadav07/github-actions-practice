@@ -7,26 +7,25 @@ jobs:
   code:
     runs-on: ubuntu-latest
     steps:
-      - name: copy code
-      run: echo "cloned"
+      - name: Copy code
+        run: echo "cloned"
 
   build:
     needs: [code]
     runs-on: ubuntu-latest
     steps:
-      - name: build code
-      run: echo "build"
+      - name: Build code
+        run: echo "build"
 
   test:
     needs: [build]
-    runs-on: ubuntu-latest
-    steps:
-      - name: test code
-      run: echo "tested"
+    runs:
+      - name: Test code
+        run: echo "tested"
 
   deploy:
     needs: [code, build]
     runs-on: ubuntu-latest
     steps:
-      - name: deploy code
-      run: echo "deployed"
+      - name: Deploy code
+        run: echo "deployed"
